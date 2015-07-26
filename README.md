@@ -1,0 +1,2 @@
+# beachresort
+Responsive Beachresort website
