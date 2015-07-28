@@ -1,8 +1,103 @@
-/*Sticky footer*/
+@import "mixins.scss";
+
+/*STICKY FOOTER*/
 .wrapper {
 	min-height: 100%;
 	margin: 0 auto -90px; 
 }
 footer, .push {
 	height: 90px; 
+}
+
+/*BODY STYLES*/
+body {
+	background-color:#DBCDA6;
+	background:
+	url(../images/bg-pattern.jpg) repeat-x,
+	url(../images/bg-body.jpg) repeat;
+	font-size:70%;
+}
+
+/*GENERIC STYLES*/
+a {text-decoration: none;}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.container {
+	min-width: 300px;
+	max-width: 860px;
+}
+
+/*HEADER*/
+.header .container {
+	@extend %clearfix;
+	margin: 0 auto;
+	@include bp-medium {
+		width:96%;		
+	}
+	@include bp-large {
+		width:75%;
+		font-size:120%;		
+	}
+}
+
+/*HEADER - LOGO*/
+.logo {
+	@extend %clearfix;
+	margin-bottom:10px;
+	a {
+		display:none;
+		@include transition(.2s ease all);
+		@include bp-medium {display:inline-block;}
+		&:hover {@include opacity(0.85);}
+	}
+	button {
+		float: right;
+		border:0px solid black;
+		color:#214d47;
+		background-color:#a49c6e;
+		margin:10px 10px 10px 0;
+		@include border-radius;
+		@include transition(.2s ease all);
+		&:hover{@include opacity(0.85);}
+		@include bp-medium {display:none;}
+	}
+}
+
+/*HEADER - TOP MENU*/
+.top-menu {
+	nav {
+		display:none;
+		@include bp-medium {display:block;}
+	}
+	a {
+		display: block;
+		background: #46a094 url(../images/tm-bg-green.png) repeat-x 0 0;
+		padding:7px 15px;
+		text-align: center;
+		font-weight: bold;
+		color:#fff;
+		@include transition(.25s ease all);
+		@include bp-medium{
+			float: left;
+			width:14%;
+			border-left:1px solid #39867c;
+			padding:11px 15px;
+			&.dive {width:16%;}
+			&:first-child {border-left:none;}
+
+		}
+		@include bp-large {padding:15px;}
+		&.active {
+		background: #96897f url(../images/tm-bg-brown.png) repeat-x 0 0;
+		color:#e4e1bd;
+		}
+		&:hover{
+			background: #d1cbab url(../images/tm-bg-hover.png) repeat-x 0 0;
+			color:#6e6258;
+			@include opacity(0.85);
+		}
+	}
 }
