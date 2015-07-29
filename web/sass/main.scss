@@ -28,19 +28,13 @@ ul {
 .container {
 	min-width: 300px;
 	max-width: 860px;
+	@include bp-medium {width:96%;}
+	@include bp-large {width:75%;}
 }
 
 /*HEADER*/
 .header .container {
-	@extend %clearfix;
-	margin: 0 auto;
-	@include bp-medium {
-		width:96%;		
-	}
-	@include bp-large {
-		width:75%;
-		font-size:120%;		
-	}
+	@include bp-large {font-size:120%;}
 }
 
 /*HEADER - LOGO*/
@@ -98,6 +92,53 @@ ul {
 			background: #d1cbab url(../images/tm-bg-hover.png) repeat-x 0 0;
 			color:#6e6258;
 			@include opacity(0.85);
+		}
+	}
+}
+
+/*SLIDER*/
+.slider {
+	.container {
+		position: relative;
+		overflow: hidden;
+		margin-top:20px;
+		p.capture {
+			display: none;
+			position: absolute;
+			top:0;
+			left:0;
+			width:100%;
+			margin:0;
+			font-weight: bold;
+			padding:7px;
+			font-size:110%;
+			color: #6e6258;
+			text-align: center;
+			background:rgba(209,203,171,0.7);
+			z-index: 2;
+			@include bp-medium {
+				padding:12px;
+				font-size:130%;
+			}
+			@include bp-large {
+				padding:17px;
+				font-size:140%;
+			}			
+		}
+	}
+	.move {
+		position: relative;
+		width:800%;
+		left:0;
+		text-align: left;
+		font-size:0;
+		margin: 0;
+		padding:0;
+		@extend %clearfix;
+		img {
+			float: left;
+			width:12.5%;
+			border:4px solid #fff;
 		}
 	}
 }
