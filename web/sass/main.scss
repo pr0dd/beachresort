@@ -142,3 +142,29 @@ ul {
 		}
 	}
 }
+
+/*SECTION ONE*/
+.one {
+	.content {padding:0 10px;}
+	h3 {
+		font-size:20px;
+		color:#295d56;
+		@include bp-medium {
+			font-size:24px;
+			color:#316e66;
+		}
+	}
+	p {
+		font-size:110%;
+		color:#5d4938;
+		@include transition(.2s ease all);
+		a {
+			color:#5d4938;
+			text-decoration:underline;
+			&:hover{color:#716f3d;}
+		}
+		&:hover {
+			color:#2c1f15;
+		}
+	}
+}
