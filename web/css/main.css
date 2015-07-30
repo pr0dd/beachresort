@@ -1,9 +1,9 @@
-.logo, .slider .move {
+.logo, .slider .move, .two-blog .container, .two-blog .pics .content, .two-blog .pics a {
   *zoom: 1; }
-  .logo:before, .slider .move:before, .logo:after, .slider .move:after {
+  .logo:before, .slider .move:before, .two-blog .container:before, .two-blog .pics .content:before, .two-blog .pics a:before, .logo:after, .slider .move:after, .two-blog .container:after, .two-blog .pics .content:after, .two-blog .pics a:after {
     content: " ";
     display: table; }
-  .logo:after, .slider .move:after {
+  .logo:after, .slider .move:after, .two-blog .container:after, .two-blog .pics .content:after, .two-blog .pics a:after {
     clear: both; }
 
 /*STICKY FOOTER*/
@@ -163,8 +163,13 @@ ul {
     border: 4px solid #fff; }
 
 /*SECTION ONE*/
+.one .container {
+  margin-top: 10px; }
 .one .content {
   padding: 0 10px; }
+  @media only screen and (min-width: 601px) {
+    .one .content {
+      padding: 0; } }
 .one h3 {
   font-size: 20px;
   color: #295d56; }
@@ -187,3 +192,109 @@ ul {
       color: #716f3d; }
   .one p:hover {
     color: #2c1f15; }
+
+/*SECTION TWO - BLOG*/
+.two-blog .container {
+  margin-top: 20px; }
+.two-blog .content-wrapper {
+  float: left;
+  margin: 0;
+  padding: 0; }
+  .two-blog .content-wrapper h4 {
+    color: #295d56; }
+    @media only screen and (min-width: 601px) {
+      .two-blog .content-wrapper h4 {
+        color: #316e66; } }
+  .two-blog .content-wrapper p {
+    color: #5d4938;
+    -webkit-transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -ms-transition: 0.2s ease all;
+    -o-transition: 0.2s ease all;
+    transition: 0.2s ease all; }
+  .two-blog .content-wrapper p.date {
+    margin-top: 3px; }
+  .two-blog .content-wrapper p:not(.date) {
+    font-size: 110%; }
+    .two-blog .content-wrapper p:not(.date):hover {
+      color: #2c1f15; }
+  .two-blog .content-wrapper p.sign {
+    color: #316e66;
+    margin: 0;
+    text-align: right; }
+    .two-blog .content-wrapper p.sign:hover {
+      color: #316e66; }
+  .two-blog .content-wrapper .latest-blog, .two-blog .content-wrapper .testimonials {
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px; }
+  .two-blog .content-wrapper .latest-blog {
+    padding-bottom: 20px; }
+    .two-blog .content-wrapper .latest-blog h4:first-child {
+      margin-top: 0; }
+    .two-blog .content-wrapper .latest-blog div {
+      border-top: 1px dotted #9c8964;
+      padding-top: 10px; }
+      .two-blog .content-wrapper .latest-blog div h4 {
+        margin-bottom: 0; }
+        .two-blog .content-wrapper .latest-blog div h4 a {
+          color: #295d56; }
+          @media only screen and (min-width: 601px) {
+            .two-blog .content-wrapper .latest-blog div h4 a {
+              color: #316e66; } }
+          .two-blog .content-wrapper .latest-blog div h4 a:hover {
+            color: #716f3d; }
+    .two-blog .content-wrapper .latest-blog div:last-child {
+      border-bottom: 1px dotted #9c8964; }
+  .two-blog .content-wrapper .testimonials {
+    margin-top: 15px; }
+    .two-blog .content-wrapper .testimonials p {
+      margin-bottom: 0; }
+.two-blog .news {
+  padding: 0 22px 0 10px; }
+  @media only screen and (min-width: 601px) {
+    .two-blog .news {
+      width: 50%;
+      padding-left: 0; } }
+  @media only screen and (min-width: 880px) {
+    .two-blog .news {
+      width: 60%; } }
+.two-blog .pics {
+  margin-top: 15px; }
+  @media only screen and (min-width: 601px) {
+    .two-blog .pics {
+      width: 50%;
+      margin-top: 0; } }
+  @media only screen and (min-width: 880px) {
+    .two-blog .pics {
+      width: 40%; } }
+  .two-blog .pics .content {
+    text-align: center; }
+  .two-blog .pics a {
+    display: inline-block;
+    margin-bottom: 15px;
+    -webkit-transition: 0.5s ease all;
+    -moz-transition: 0.5s ease all;
+    -ms-transition: 0.5s ease all;
+    -o-transition: 0.5s ease all;
+    transition: 0.5s ease all; }
+    .two-blog .pics a:hover {
+      opacity: 0.85;
+      filter: alpha(opacity=85); }
+  .two-blog .pics img {
+    margin-right: 10px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px; }
+    .two-blog .pics img:last-child {
+      margin-bottom: 0; }
+    @media only screen and (min-width: 601px) {
+      .two-blog .pics img {
+        float: right;
+        margin-right: 0; } }
