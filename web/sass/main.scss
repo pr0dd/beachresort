@@ -358,3 +358,70 @@ ul {
 		}
 	}
 }
+
+/*ROOMS PAGE*/
+.rooms {
+	.container {
+		@extend %clearfix;
+		background-color:#fff;
+		margin-top:20px;
+		padding: 5px;
+		@include bp-medium {padding:15px 30px;}
+		@include box-shadow;
+		@include border-radius;
+		h2 {
+			padding-left:10px;
+			@include bp-medium {padding-left:0;}
+		}
+		.text-1,.text-2,.text-3 {
+			@extend %clearfix;
+			float:left; 
+			width:100%;
+			padding-bottom:15px;
+			margin-top: 25px;
+			h2:first-child, h3:first-child {
+				margin-top: 0;
+			}
+			h3 {
+				a {
+					color:#295d56;
+					@include bp-medium {
+						color:#316e66;
+					}
+					&:hover {color:#716f3d;}
+				}
+			}
+			.content {
+				float:left;
+				img {
+					max-width: 100%;
+					height: auto;
+					@include box-shadow;
+				}
+			}
+			.picture {
+				@include bp-medium {width:55%;}
+			}
+			.info {
+				position:relative;
+				padding-top:10px;
+				@include bp-medium {
+					width:45%;
+					padding:0 0 0 15px;
+				}
+				p.rate {
+					display: inline-block;
+					width: 150px;
+					padding:7px;
+					border:1px solid #5A4535;
+					text-align: center;
+					@include border-radius(3px);
+					&:hover {background-color:rgba(224,221,159,0.3);}
+				}
+			}
+		}
+		.text-1, .text-2 {
+			border-bottom:1px solid #BBBBBB;
+		}
+	}
+}
