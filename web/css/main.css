@@ -1,9 +1,9 @@
-.logo, .slider .move, .two-blog .container, .two-blog .pics .content, .two-blog .pics a, .footer .container, .footer .footer-menu ul {
+.logo, .slider .move, .two-blog .container, .two-blog .pics .content, .two-blog .pics a, .footer .container, .footer .footer-menu ul, .about .container {
   *zoom: 1; }
-  .logo:before, .slider .move:before, .two-blog .container:before, .two-blog .pics .content:before, .two-blog .pics a:before, .footer .container:before, .footer .footer-menu ul:before, .logo:after, .slider .move:after, .two-blog .container:after, .two-blog .pics .content:after, .two-blog .pics a:after, .footer .container:after, .footer .footer-menu ul:after {
+  .logo:before, .slider .move:before, .two-blog .container:before, .two-blog .pics .content:before, .two-blog .pics a:before, .footer .container:before, .footer .footer-menu ul:before, .about .container:before, .logo:after, .slider .move:after, .two-blog .container:after, .two-blog .pics .content:after, .two-blog .pics a:after, .footer .container:after, .footer .footer-menu ul:after, .about .container:after {
     content: " ";
     display: table; }
-  .logo:after, .slider .move:after, .two-blog .container:after, .two-blog .pics .content:after, .two-blog .pics a:after, .footer .container:after, .footer .footer-menu ul:after {
+  .logo:after, .slider .move:after, .two-blog .container:after, .two-blog .pics .content:after, .two-blog .pics a:after, .footer .container:after, .footer .footer-menu ul:after, .about .container:after {
     clear: both; }
 
 /*STICKY FOOTER*/
@@ -176,13 +176,16 @@ ul {
   @media only screen and (min-width: 601px) {
     .one .content {
       padding: 0; } }
-.one h3 {
-  font-size: 20px;
+.one h2, .one h3 {
   color: #295d56; }
   @media only screen and (min-width: 601px) {
-    .one h3 {
-      font-size: 24px;
+    .one h2, .one h3 {
       color: #316e66; } }
+.one h3 {
+  font-size: 20px; }
+  @media only screen and (min-width: 601px) {
+    .one h3 {
+      font-size: 24px; } }
 .one p {
   font-size: 110%;
   color: #5d4938;
@@ -373,3 +376,30 @@ ul {
   .footer .footer-menu p {
     color: #594334;
     text-align: center; }
+
+/*ABOUT PAGE*/
+.about .container {
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 15px 30px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px; }
+  .about .container .text-1, .about .container .text-2, .about .container .text-3 {
+    float: left;
+    width: 100%;
+    padding: 0 10px;
+    margin-top: 25px; }
+    .about .container .text-1 h2:first-child, .about .container .text-1 h3:first-child, .about .container .text-2 h2:first-child, .about .container .text-2 h3:first-child, .about .container .text-3 h2:first-child, .about .container .text-3 h3:first-child {
+      margin-top: 0; }
+  .about .container .text-1 {
+    border-bottom: 1px solid #BBBBBB; }
+  @media only screen and (min-width: 601px) {
+    .about .container .text-2 {
+      width: 65%; } }
+  @media only screen and (min-width: 601px) {
+    .about .container .text-3 {
+      width: 35%;
+      border-left: 1px solid #BBBBBB; } }

@@ -152,12 +152,16 @@ ul {
 		padding: 0 10px;
 		@include bp-medium {padding:0;}
 	}
-	h3 {
-		font-size:20px;
+	h2, h3 {
 		color:#295d56;
 		@include bp-medium {
-			font-size:24px;
 			color:#316e66;
+		}
+	}
+	h3 {
+		font-size:20px;
+		@include bp-medium {
+			font-size:24px;
 		}
 	}
 	p {
@@ -204,9 +208,7 @@ ul {
 		.latest-blog, .testimonials {
 			background:#fff;
 			padding:10px;
-			box-shadow:
-				0 2px 4px 0 rgba(0,0,0,0.2),
-				0 2px 10px 0 rgba(0,0,0,0.19);
+			@include box-shadow;
 			@include border-radius;
 		}
 		.latest-blog {
@@ -257,7 +259,7 @@ ul {
 		}
 		img {
 			margin-right: 10px;
-			box-shadow:0 2px 4px 0 rgba(0,0,0,0.2),0 2px 10px 0 rgba(0,0,0,0.19);
+			@include box-shadow;
 			&:last-child {margin-bottom: 0;}
 			@include bp-medium {float:right;margin-right:0;}
 			@include border-radius;
@@ -320,6 +322,39 @@ ul {
 		p {
 			color:#594334;
 			text-align: center;
+		}
+	}
+}
+
+/*ABOUT PAGE*/
+.about {
+	.container {
+		@extend %clearfix;
+		background-color:#fff;
+		margin-top:20px;
+		padding:15px 30px;
+		@include box-shadow;
+		@include border-radius;
+		.text-1,.text-2,.text-3 {
+			float:left; 
+			width:100%;
+			padding:0 10px;
+			margin-top: 25px;
+			h2:first-child, h3:first-child {
+				margin-top: 0;
+			}
+		}
+		.text-1 {
+			border-bottom:1px solid #BBBBBB;
+		}
+		.text-2 {
+			@include bp-medium {width:65%;}
+		}
+		.text-3 {
+			@include bp-medium {
+				width:35%;
+				border-left:1px solid #BBBBBB;
+			}
 		}
 	}
 }
