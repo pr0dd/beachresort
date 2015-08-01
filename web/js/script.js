@@ -74,5 +74,18 @@
     startSlider();
 	}
 	slider();
-
+	//MENU BUTTON
+	function holder(){
+		//intialize vars
+		var block = $(".food .holder");
+		//set event handlers
+		block.
+		on("mouseenter", function(){
+			$(this).find(".hidden").css({bottom:-150, display:"block"}).animate({bottom:0},500);
+		}).
+		on("mouseleave", function(){
+			$(this).find(".hidden").css({bottom:0}).animate({bottom:-150},500);
+		});
+	}
+	holder();
 });

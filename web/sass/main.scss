@@ -81,7 +81,7 @@ ul {
 			float: left;
 			width:14%;
 			border-left:1px solid #39867c;
-			padding:11px 15px;
+			padding:11px 10px;
 			&.dive {width:16%;}
 			&:first-child {border-left:none;}
 
@@ -441,6 +441,55 @@ ul {
 				@include bp-medium {
 					padding:0 15px 0 0;
 				}
+			}
+		}
+	}
+}
+
+/*FOOD*/
+.food {
+	.container {
+		padding:15px 40px;
+		.text-1,.text-2,.text-3 {
+			padding-bottom:30px;
+		}
+		.holder {
+			position: relative;
+			overflow: hidden;
+			@extend %clearfix;
+			@include box-shadow;
+			img {
+				float:left;
+				max-width: 100%;
+				height: auto;
+				@include transition(.2s ease all);
+				&:hover {@include opacity(0.4)}
+				&.large {
+					display:none;
+					@include bp-medium {display:block;}
+				}
+				&.small {
+					@include bp-medium {display:none;}
+				}
+			}
+			.hidden {
+				display: none;
+				width:100%;
+				position: absolute;
+				left:0;
+				bottom:0;
+				background-color:#FDF8F5;
+				font-size: 80%;
+				padding: 0 10px;
+				color:#295d56;
+				@include bp-medium {
+					font-size: 85%;
+					color:#316e66;
+				}
+				@include bp-large {font-size:90%;}
+				h4 {margin:7px 0;}
+				p {color: #316e66;}
+
 			}
 		}
 	}
