@@ -3,11 +3,11 @@
 /*STICKY FOOTER*/
 .wrapper {
 	min-height: 100%;
-	margin: 0 auto -451px;
+	margin: 0 auto -430px;
 	@include bp-medium {margin-bottom:-104px;} 
 }
 footer, .push {
-	height: 451px;
+	height: 430px;
 	@include bp-medium {height:104px;}  
 }
 
@@ -320,6 +320,8 @@ ul {
 			}
 		}
 		p {
+			font-size: 90%;
+			@include bp-medium {font-size:100%;}
 			color:#594334;
 			text-align: center;
 		}
@@ -422,6 +424,24 @@ ul {
 		}
 		.text-1, .text-2 {
 			border-bottom:1px solid #BBBBBB;
+		}
+	}
+}
+
+/*REEF PAGE*/
+.reef {
+	.container {
+		.text-1,.text-2,.text-3 {
+			.picture {
+				@extend %clearfix;
+				img {float:right;}
+			}
+			.info {
+				@extend %clearfix;
+				@include bp-medium {
+					padding:0 15px 0 0;
+				}
+			}
 		}
 	}
 }

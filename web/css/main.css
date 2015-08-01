@@ -1,21 +1,21 @@
-.logo, .slider .move, .two-blog .container, .two-blog .pics .content, .two-blog .pics a, .footer .container, .footer .footer-menu ul, .about .container, .rooms .container, .rooms .container .text-1, .rooms .container .text-2, .rooms .container .text-3 {
+.logo, .slider .move, .two-blog .container, .two-blog .pics .content, .two-blog .pics a, .footer .container, .footer .footer-menu ul, .about .container, .rooms .container, .rooms .container .text-1, .rooms .container .text-2, .rooms .container .text-3, .reef .container .text-1 .picture, .reef .container .text-2 .picture, .reef .container .text-3 .picture, .reef .container .text-1 .info, .reef .container .text-2 .info, .reef .container .text-3 .info {
   *zoom: 1; }
-  .logo:before, .slider .move:before, .two-blog .container:before, .two-blog .pics .content:before, .two-blog .pics a:before, .footer .container:before, .footer .footer-menu ul:before, .about .container:before, .rooms .container:before, .rooms .container .text-1:before, .rooms .container .text-2:before, .rooms .container .text-3:before, .logo:after, .slider .move:after, .two-blog .container:after, .two-blog .pics .content:after, .two-blog .pics a:after, .footer .container:after, .footer .footer-menu ul:after, .about .container:after, .rooms .container:after, .rooms .container .text-1:after, .rooms .container .text-2:after, .rooms .container .text-3:after {
+  .logo:before, .slider .move:before, .two-blog .container:before, .two-blog .pics .content:before, .two-blog .pics a:before, .footer .container:before, .footer .footer-menu ul:before, .about .container:before, .rooms .container:before, .rooms .container .text-1:before, .rooms .container .text-2:before, .rooms .container .text-3:before, .reef .container .text-1 .picture:before, .reef .container .text-2 .picture:before, .reef .container .text-3 .picture:before, .reef .container .text-1 .info:before, .reef .container .text-2 .info:before, .reef .container .text-3 .info:before, .logo:after, .slider .move:after, .two-blog .container:after, .two-blog .pics .content:after, .two-blog .pics a:after, .footer .container:after, .footer .footer-menu ul:after, .about .container:after, .rooms .container:after, .rooms .container .text-1:after, .rooms .container .text-2:after, .rooms .container .text-3:after, .reef .container .text-1 .picture:after, .reef .container .text-2 .picture:after, .reef .container .text-3 .picture:after, .reef .container .text-1 .info:after, .reef .container .text-2 .info:after, .reef .container .text-3 .info:after {
     content: " ";
     display: table; }
-  .logo:after, .slider .move:after, .two-blog .container:after, .two-blog .pics .content:after, .two-blog .pics a:after, .footer .container:after, .footer .footer-menu ul:after, .about .container:after, .rooms .container:after, .rooms .container .text-1:after, .rooms .container .text-2:after, .rooms .container .text-3:after {
+  .logo:after, .slider .move:after, .two-blog .container:after, .two-blog .pics .content:after, .two-blog .pics a:after, .footer .container:after, .footer .footer-menu ul:after, .about .container:after, .rooms .container:after, .rooms .container .text-1:after, .rooms .container .text-2:after, .rooms .container .text-3:after, .reef .container .text-1 .picture:after, .reef .container .text-2 .picture:after, .reef .container .text-3 .picture:after, .reef .container .text-1 .info:after, .reef .container .text-2 .info:after, .reef .container .text-3 .info:after {
     clear: both; }
 
 /*STICKY FOOTER*/
 .wrapper {
   min-height: 100%;
-  margin: 0 auto -451px; }
+  margin: 0 auto -430px; }
   @media only screen and (min-width: 601px) {
     .wrapper {
       margin-bottom: -104px; } }
 
 footer, .push {
-  height: 451px; }
+  height: 430px; }
   @media only screen and (min-width: 601px) {
     footer, .push {
       height: 104px; } }
@@ -374,8 +374,12 @@ ul {
         .footer .footer-menu ul li a.active {
           color: #eee7c3; }
   .footer .footer-menu p {
+    font-size: 90%;
     color: #594334;
     text-align: center; }
+    @media only screen and (min-width: 601px) {
+      .footer .footer-menu p {
+        font-size: 100%; } }
 
 /*ABOUT PAGE*/
 .about .container {
@@ -466,3 +470,10 @@ ul {
           background-color: rgba(224, 221, 159, 0.3); }
   .rooms .container .text-1, .rooms .container .text-2 {
     border-bottom: 1px solid #BBBBBB; }
+
+/*REEF PAGE*/
+.reef .container .text-1 .picture img, .reef .container .text-2 .picture img, .reef .container .text-3 .picture img {
+  float: right; }
+@media only screen and (min-width: 601px) {
+  .reef .container .text-1 .info, .reef .container .text-2 .info, .reef .container .text-3 .info {
+    padding: 0 15px 0 0; } }
