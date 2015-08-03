@@ -450,6 +450,7 @@ ul {
 .food {
 	.container {
 		padding:15px 40px;
+		h2 {padding-left:0;}
 		.text-1,.text-2,.text-3 {
 			padding-bottom:30px;
 		}
@@ -462,8 +463,6 @@ ul {
 				float:left;
 				max-width: 100%;
 				height: auto;
-				@include transition(.2s ease all);
-				&:hover {@include opacity(0.4)}
 				&.large {
 					display:none;
 					@include bp-medium {display:block;}

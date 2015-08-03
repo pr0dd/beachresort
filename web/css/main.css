@@ -481,6 +481,8 @@ ul {
 /*FOOD*/
 .food .container {
   padding: 15px 40px; }
+  .food .container h2 {
+    padding-left: 0; }
   .food .container .text-1, .food .container .text-2, .food .container .text-3 {
     padding-bottom: 30px; }
   .food .container .holder {
@@ -490,15 +492,7 @@ ul {
     .food .container .holder img {
       float: left;
       max-width: 100%;
-      height: auto;
-      -webkit-transition: 0.2s ease all;
-      -moz-transition: 0.2s ease all;
-      -ms-transition: 0.2s ease all;
-      -o-transition: 0.2s ease all;
-      transition: 0.2s ease all; }
-      .food .container .holder img:hover {
-        opacity: 0.4;
-        filter: alpha(opacity=40); }
+      height: auto; }
       .food .container .holder img.large {
         display: none; }
         @media only screen and (min-width: 601px) {

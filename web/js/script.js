@@ -81,9 +81,11 @@
 		//set event handlers
 		block.
 		on("mouseenter", function(){
+			$(this).find("img").animate({opacity:0.5},200);
 			$(this).find(".hidden").css({bottom:-150, display:"block"}).animate({bottom:0},500);
 		}).
 		on("mouseleave", function(){
+			$(this).find("img").animate({opacity:1},200);
 			$(this).find(".hidden").css({bottom:0}).animate({bottom:-150},500);
 		});
 	}
