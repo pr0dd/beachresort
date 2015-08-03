@@ -528,3 +528,65 @@ ul {
 		.text-3 {border-left:none;}
 	}
 }
+
+/*CONTACT PAGE*/
+.contact {
+	.container {
+		@include bp-medium {padding-bottom:10%;}
+		.text-1,.text-2 {
+			@include bp-medium {
+				width: 50%;
+			}
+		}
+		.text-1 {
+			padding-right:15px;
+			border-bottom:none;
+		}
+		.text-2 {
+			padding:0 0 5px 0;
+			//form styles:
+			form {
+				border: 1px solid #808080;
+				padding:0 10px 20px;
+				@include bp-large {padding-left:10%;}
+				@include box-shadow;
+				@include border-radius;
+				.f-group {
+					position: relative;
+					margin-top: 30px;
+					margin-bottom: 30px;
+				}
+				.f-input,.f-textarea {
+					padding: 10px;
+					display: block;
+					width: 90%;
+					border: none;
+					border-bottom: 1px solid #808080;
+					&:focus~.f-label, &:valid~.f-label {
+						top:-20px;
+						color:#888;
+					}
+				}
+				.f-textarea {max-width:90%;}
+				.f-label {
+					position: absolute;
+					left: 5px;
+					top: 7px;
+					color: #316e66;
+					@include transition(.2s ease all);
+				}
+				button {
+					color: #DFD38C;
+					background-color: #5A4535;
+					border: 1px solid #5A4535;
+					@include border-radius(3px);
+					@include transition(.2s ease all);
+					&:hover {
+						background-color: #3E9085;
+						border: 1px solid #3E9085;
+					}
+				}
+			}
+		}
+	}
+}
